@@ -103,6 +103,7 @@ def prediction(citra_tes,data_tes):
     res = cv.putText(img, "Pala C: %i " % pala_c, (10,120), cv.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2, cv.LINE_AA)
     cv.imshow('Hasil_Akhir',res)
     root = r'D:\Document\Skripsi\1 Aplikasi v2'
+    #root in this script is my root folder in my project
     os.chdir(root)
     cv.waitKey(0)
     cv.destroyAllWindows()
