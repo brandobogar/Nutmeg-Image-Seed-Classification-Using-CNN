@@ -73,26 +73,8 @@ def create_model():
     plt.tight_layout()
     plt.savefig('Model.png')
 
-def model_evaluasi(model):
-    model_load = load_model(model)
-
-    test_loss, test_acc = model_load.evaluate(
-        data_uji,
-        verbose =0)
-    test_acc = test_acc *100
-    test_loss = test_loss *100
-
-    print("Model yg di pakai adalah model", model)
-    print("accuracy = {:.1f}%".format(test_acc))
-    print("loss = {:.1f}%".format(test_loss))
-    print('--------------------------------------')
-
 model = create_model()
 
-model = model_evaluasi(model ='Model.h5')
-#model = model_evaluasi(model ='Model1.h5')
-
-#predik = model_predict(model = 'Model1-2.h5', jd = 10)
 
 
 
