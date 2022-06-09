@@ -44,6 +44,7 @@ def preprocessing(awal,tujuan):
                 cv.imwrite(img_name,cropped)
     
         root = r'D:\Document\Skripsi\1 Aplikasi v2'
+        #root in this script is my root folder in my project
         os.chdir(root)
 
 awal1 = 'img\pala_a'
