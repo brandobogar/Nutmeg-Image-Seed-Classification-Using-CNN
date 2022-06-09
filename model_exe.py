@@ -39,7 +39,7 @@ def prediksi(model,data,pala):
     print(prediksi)
     print('')
 
-model = 'Model-1.h5'
+model = 'Model.h5'
 eva= model_evaluasi(model=model)
 summ = model_summary(model=model)
 
